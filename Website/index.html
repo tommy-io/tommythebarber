@@ -24,9 +24,25 @@
     .social-icons { margin-top: 10px; }
     .social-icons a { color: white; margin: 0 8px; font-size: 1.5rem; transition: color 0.3s; }
     .social-icons a:hover { color: #ccc; }
-    .logo { display: block; margin: 5px auto 20px auto; max-width: 150px; } /* Tiny gap below banner */
-    .banner { display: block; margin: 5px auto 5px auto; max-width: 300px; }
-    @media (max-width: 600px) { header h1 { font-size: 2rem; } }
+
+    /* ✅ Updated logo + banner */
+    .logo {
+      display: block;
+      margin: 5px auto 20px auto;
+      max-width: 200px;   /* logo size */
+      height: auto;
+    }
+    .banner {
+      display: block;
+      margin: 10px auto 30px auto;
+      max-width: 600px;   /* banner about 3x logo */
+      width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 600px) { 
+      header h1 { font-size: 2rem; } 
+    }
   </style>
 </head>
 <body>
@@ -35,8 +51,9 @@
     <a href="#pricing">Pricing</a>
     <a href="#contact">Contact</a>
   </nav>
+
   <section id="services">
-<img src="images/Banner.png" alt="Tommy The Barber Banner" class="banner">
+    <img src="images/Banner.png" alt="Tommy The Barber Banner" class="banner">
     <img src="images/logo.jpg" alt="Tommy The Barber Logo" class="logo">
     <p class="quote">“When in doubt, get a fresh cut - it never fails.”</p>
     <hr class="quote-divider">
@@ -53,6 +70,7 @@
       <div class="service"><h3>Kids Skinfade</h3><p>Cool skinfade style for kids.</p></div>
     </div>
   </section>
+
   <section id="pricing" class="pricing">
     <h2>Pricing</h2>
     <table>
@@ -68,10 +86,12 @@
       <tr><td>Kids Skinfade</td><td>from €15</td></tr>
     </table>
   </section>
+
   <section id="contact">
     <h2>Contact Us</h2>
     <p style="text-align: center;">Call us: +35796740788</p>
   </section>
+
   <footer>
     <p>&copy; 2025 Tommy The Barber. All Rights Reserved.</p>
     <div class="social-icons">
@@ -84,3 +104,4 @@
   </footer>
 </body>
 </html>
+
