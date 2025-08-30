@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tommy The Barber</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; line-height: 1.6; color: #333; background-color: white; }
+    nav { background: #121c4e; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 600; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h2 { text-align: center; margin-bottom: 20px; color: #121c4e; font-weight: 600; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .service { background: #f5f5f5; padding: 20px; border-radius: 10px; text-align: center; }
+    .quote { text-align: center; font-style: italic; margin: 15px 0; color: #121c4e; font-size: 1.3rem; font-weight: 500; }
+    .quote-divider { border: none; border-top: 2px solid #121c4e; width: 60%; margin: 10px auto 20px auto; }
+    .pricing table { width: 100%; border-collapse: collapse; }
+    .pricing th { background-color: #121c4e; color: white; font-weight: 600; }
+    .pricing th, .pricing td { padding: 12px; border-bottom: 1px solid #ccc; text-align: left; }
+    footer { background: #121c4e; color: white; text-align: center; padding: 20px; }
+    .social-icons { margin-top: 10px; }
+    .social-icons a { color: white; margin: 0 8px; font-size: 1.5rem; transition: color 0.3s; }
+    .social-icons a:hover { color: #ccc; }
+    .logo { display: block; margin: 5px auto 20px auto; max-width: 150px; } /* Tiny gap below banner */
+    .banner { display: block; margin: 5px auto 5px auto; max-width: 300px; }
+    @media (max-width: 600px) { header h1 { font-size: 2rem; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="services">
+    <img src="Banner.png" alt="Tommy The Barber Banner" class="banner">
+    <img src="logo.jpg" alt="Tommy The Barber Logo" class="logo">
+    <p class="quote">“When in doubt, get a fresh cut - it never fails.”</p>
+    <hr class="quote-divider">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service"><h3>Standard Haircut</h3><p>Classic style tailored to you.</p></div>
+      <div class="service"><h3>Skinfade</h3><p>Sharp, modern fades with precision.</p></div>
+      <div class="service"><h3>Taper Fade</h3><p>Clean taper fade with style.</p></div>
+      <div class="service"><h3>Beard Trim</h3><p>Keep your beard sharp and stylish.</p></div>
+      <div class="service"><h3>Wax</h3><p>Quick and clean waxing service.</p></div>
+      <div class="service"><h3>Wet Shave</h3><p>Traditional close shave experience.</p></div>
+      <div class="service"><h3>Hot Towel</h3><p>Relaxing hot towel treatment.</p></div>
+      <div class="service"><h3>Kids Standard Haircut</h3><p>Gentle, stylish cuts for kids.</p></div>
+      <div class="service"><h3>Kids Skinfade</h3><p>Cool skinfade style for kids.</p></div>
+    </div>
+  </section>
+  <section id="pricing" class="pricing">
+    <h2>Pricing</h2>
+    <table>
+      <tr><th>Service</th><th>Price</th></tr>
+      <tr><td>Standard Haircut</td><td>from €15</td></tr>
+      <tr><td>Skinfade</td><td>from €18</td></tr>
+      <tr><td>Taper Fade</td><td>from €18</td></tr>
+      <tr><td>Beard Trim</td><td>from €6</td></tr>
+      <tr><td>Wax</td><td>from €3</td></tr>
+      <tr><td>Wet Shave</td><td>from €10</td></tr>
+      <tr><td>Hot Towel</td><td>from €15</td></tr>
+      <tr><td>Kids Standard Haircut</td><td>from €12</td></tr>
+      <tr><td>Kids Skinfade</td><td>from €15</td></tr>
+    </table>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align: center;">Call us: +35796740788</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Tommy The Barber. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/tommythebarber_cyp/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/tommythebarbercyp" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.tiktok.com/@tommythebarbercyp" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/35796740788" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://maps.app.goo.gl/1WWi2xTZhJygy3st5" target="_blank" aria-label="Location"><i class="fas fa-map-marker-alt"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
